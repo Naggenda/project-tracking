@@ -1,0 +1,91 @@
+*{
+    font-size: 18px;
+    
+}
+.top-sect{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(230, 29%, 20%);
+    padding: 0px 5px;
+}
+a:hover{
+    text-decoration: underline;
+}
+.special{
+    color: hsl(230, 11%, 40%);
+    padding-left: 20px;
+}
+.new{
+    border-radius: 45px; 
+    background-color:hsl(230, 11%, 40%);
+    width: 50px;
+    height: 20px;
+    color: hsl(207, 33%, 95%);
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+}
+.new-lft{
+    padding-left: 2%;
+    color: hsl(230, 11%, 40%);
+    font-variant-caps: all-petite-caps;
+}
+.button{
+    border: none;
+    color: hsl(207, 33%, 95%);
+    background-color: hsl(0, 100%, 68%);
+    font-variant-caps: all-petite-caps;
+    height: 30px;
+    border-radius: 5px;
+}
+p{
+    color: hsl(230, 11%, 40%);
+}
+h1{
+    font-variant-caps: all-petite-caps;
+    font-size: -webkit-xxx-large;
+}
+.next{
+    padding: 0% 10%;
+    display: flex;
+}
+.image{
+    width: 170%;
+} 
+.visible{
+    display: none;
+}
+.button-prev{
+    display: flex;
+}
+
+/* mobile view */
+
+@media screen and (max-width: 375px){
+    .next{
+        flex-direction: column-reverse;
+    }
+    .next-left{
+        width: 100%;
+    }
+    .next-right{
+        width: 100%;
+    }
+    .visible{
+        display: block;
+    }
+    a{
+       display: none; 
+    }
+    h1{
+        font-size: 30px;
+    }
+    
+    .image{
+        width: 176%;
+    }
+}
