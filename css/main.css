@@ -30,7 +30,7 @@ a:hover{
     font-variant-caps: all-petite-caps;
 }
 .new-lft{
-    padding-left: 2%;
+    padding-left: 1%;
     color: hsl(230, 11%, 40%);
     font-variant-caps: all-petite-caps;
 }
@@ -41,6 +41,9 @@ a:hover{
     font-variant-caps: all-petite-caps;
     height: 30px;
     border-radius: 5px;
+}
+.button:hover{
+    opacity: 0.6;
 }
 p{
     color: hsl(230, 11%, 40%);
@@ -62,6 +65,9 @@ h1{
 .button-prev{
     display: flex;
 }
+.invisible{
+    display: none;
+}
 
 /* mobile view */
 
@@ -72,13 +78,16 @@ h1{
     .next-left{
         width: 100%;
     }
+    li{
+        list-style: none;
+    }
     .next-right{
         width: 100%;
     }
     .visible{
         display: block;
     }
-    a{
+    .hide{
        display: none; 
     }
     h1{
@@ -87,5 +96,21 @@ h1{
     
     .image{
         width: 176%;
+    }
+    .displayable{
+        display: block;
+        width: 70%;
+        background-color: lavender;
+        position: absolute;
+        top: 84px;
+        left: 60px;
+        text-align: center;
+        height: 213px;
+    }
+    li{
+        padding-top: 20px;
+    }
+    hr{
+        width: 80%;
     }
 }
