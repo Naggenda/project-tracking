@@ -2,6 +2,10 @@
     font-size: 18px;
     
 }
+
+body{
+    overflow-x: hidden;
+}
 .top-sect{
     display: flex;
     justify-content: space-between;
